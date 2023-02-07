@@ -1,0 +1,27 @@
+{
+  "name": "emart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "browsersync": "browser-sync start --server --startPath 'public_html/index.html' --files 'public_html/**/*'",
+    "esbuild": "esbuild src/app.jsx --outfile=public_html/app.js --watch",
+    "start": "npm-run-all --parallel esbuild browsersync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmorales01/eMart.git"
+  },
+  "author": "Pedro Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmorales01/eMart/issues"
+  },
+  "homepage": "https://github.com/pmorales01/eMart#readme",
+  "dependencies": {
+    "esbuild": "0.17.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "npm-run-all": "^4.1.5"
+  }
+}
